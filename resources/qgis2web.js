@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([12772576.957567, -449646.006803, 12971795.129420, -306814.563116], map.getSize());
+map.getView().fit([12851156.627156, -412016.649126, 12910428.149360, -369517.117798], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -1094,7 +1094,7 @@ let measuring = false;
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_BatasSLS_5,
+    layer: lyr_BatasSLS202601_6,
     colName: 'idsubsls',
     zoom: 10,
     collapsed: true,

@@ -72,75 +72,93 @@ var lyr_DaftarSampelSLSSNLIK_4 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/DaftarSampelSLSSNLIK_4.png" /> Daftar Sampel SLS SNLIK'
             });
-var format_BatasSLS_5 = new ol.format.GeoJSON();
-var features_BatasSLS_5 = format_BatasSLS_5.readFeatures(json_BatasSLS_5, 
+var format_BatasSLS202501_5 = new ol.format.GeoJSON();
+var features_BatasSLS202501_5 = format_BatasSLS202501_5.readFeatures(json_BatasSLS202501_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_BatasSLS_5 = new ol.source.Vector({
+var jsonSource_BatasSLS202501_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_BatasSLS_5.addFeatures(features_BatasSLS_5);
-var lyr_BatasSLS_5 = new ol.layer.Vector({
+jsonSource_BatasSLS202501_5.addFeatures(features_BatasSLS202501_5);
+var lyr_BatasSLS202501_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_BatasSLS_5, 
-                style: style_BatasSLS_5,
-                popuplayertitle: 'Batas SLS',
+                source:jsonSource_BatasSLS202501_5, 
+                style: style_BatasSLS202501_5,
+                popuplayertitle: 'Batas SLS (202501)',
                 interactive: true,
-                title: '<img src="styles/legend/BatasSLS_5.png" /> Batas SLS'
+                title: '<img src="styles/legend/BatasSLS202501_5.png" /> Batas SLS (202501)'
             });
-var format_BatasDesa_6 = new ol.format.GeoJSON();
-var features_BatasDesa_6 = format_BatasDesa_6.readFeatures(json_BatasDesa_6, 
+var format_BatasSLS202601_6 = new ol.format.GeoJSON();
+var features_BatasSLS202601_6 = format_BatasSLS202601_6.readFeatures(json_BatasSLS202601_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_BatasDesa_6 = new ol.source.Vector({
+var jsonSource_BatasSLS202601_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_BatasDesa_6.addFeatures(features_BatasDesa_6);
-var lyr_BatasDesa_6 = new ol.layer.Vector({
+jsonSource_BatasSLS202601_6.addFeatures(features_BatasSLS202601_6);
+var lyr_BatasSLS202601_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_BatasDesa_6, 
-                style: style_BatasDesa_6,
+                source:jsonSource_BatasSLS202601_6, 
+                style: style_BatasSLS202601_6,
+                popuplayertitle: 'Batas SLS (202601)',
+                interactive: true,
+                title: '<img src="styles/legend/BatasSLS202601_6.png" /> Batas SLS (202601)'
+            });
+var format_BatasDesa_7 = new ol.format.GeoJSON();
+var features_BatasDesa_7 = format_BatasDesa_7.readFeatures(json_BatasDesa_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_BatasDesa_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_BatasDesa_7.addFeatures(features_BatasDesa_7);
+var lyr_BatasDesa_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_BatasDesa_7, 
+                style: style_BatasDesa_7,
                 popuplayertitle: 'Batas Desa',
                 interactive: true,
-                title: '<img src="styles/legend/BatasDesa_6.png" /> Batas Desa'
+                title: '<img src="styles/legend/BatasDesa_7.png" /> Batas Desa'
             });
-var format_BatasKecamatan_7 = new ol.format.GeoJSON();
-var features_BatasKecamatan_7 = format_BatasKecamatan_7.readFeatures(json_BatasKecamatan_7, 
+var format_BatasKecamatan_8 = new ol.format.GeoJSON();
+var features_BatasKecamatan_8 = format_BatasKecamatan_8.readFeatures(json_BatasKecamatan_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_BatasKecamatan_7 = new ol.source.Vector({
+var jsonSource_BatasKecamatan_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_BatasKecamatan_7.addFeatures(features_BatasKecamatan_7);
-var lyr_BatasKecamatan_7 = new ol.layer.Vector({
+jsonSource_BatasKecamatan_8.addFeatures(features_BatasKecamatan_8);
+var lyr_BatasKecamatan_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_BatasKecamatan_7, 
-                style: style_BatasKecamatan_7,
+                source:jsonSource_BatasKecamatan_8, 
+                style: style_BatasKecamatan_8,
                 popuplayertitle: 'Batas Kecamatan',
                 interactive: false,
-                title: '<img src="styles/legend/BatasKecamatan_7.png" /> Batas Kecamatan'
+                title: '<img src="styles/legend/BatasKecamatan_8.png" /> Batas Kecamatan'
             });
 
-lyr_GoogleHybrid_0.setVisible(true);lyr_DaftarSampelSLSSUPAS25_1.setVisible(true);lyr_DaftarSampelSLSSAKERNAS0825_2.setVisible(true);lyr_DaftarSampelSLSUBINAN1225_3.setVisible(true);lyr_DaftarSampelSLSSNLIK_4.setVisible(true);lyr_BatasSLS_5.setVisible(true);lyr_BatasDesa_6.setVisible(true);lyr_BatasKecamatan_7.setVisible(false);
-var layersList = [lyr_GoogleHybrid_0,lyr_DaftarSampelSLSSUPAS25_1,lyr_DaftarSampelSLSSAKERNAS0825_2,lyr_DaftarSampelSLSUBINAN1225_3,lyr_DaftarSampelSLSSNLIK_4,lyr_BatasSLS_5,lyr_BatasDesa_6,lyr_BatasKecamatan_7];
+lyr_GoogleHybrid_0.setVisible(true);lyr_DaftarSampelSLSSUPAS25_1.setVisible(true);lyr_DaftarSampelSLSSAKERNAS0825_2.setVisible(true);lyr_DaftarSampelSLSUBINAN1225_3.setVisible(true);lyr_DaftarSampelSLSSNLIK_4.setVisible(true);lyr_BatasSLS202501_5.setVisible(true);lyr_BatasSLS202601_6.setVisible(true);lyr_BatasDesa_7.setVisible(true);lyr_BatasKecamatan_8.setVisible(false);
+var layersList = [lyr_GoogleHybrid_0,lyr_DaftarSampelSLSSUPAS25_1,lyr_DaftarSampelSLSSAKERNAS0825_2,lyr_DaftarSampelSLSUBINAN1225_3,lyr_DaftarSampelSLSSNLIK_4,lyr_BatasSLS202501_5,lyr_BatasSLS202601_6,lyr_BatasDesa_7,lyr_BatasKecamatan_8];
 lyr_DaftarSampelSLSSUPAS25_1.set('fieldAliases', {'gid': 'gid', 'luas': 'luas', 'idsls': 'idsls', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'kdsls': 'kdsls', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'nmsls': 'nmsls', 'kddesa': 'kddesa', 'kdprov': 'kdprov', 'nmdesa': 'nmdesa', 'nmprov': 'nmprov', 'subsls': 'subsls', 'sumber': 'sumber', 'periode': 'periode', 'idsubsls': 'idsubsls', 'fid': 'fid', });
 lyr_DaftarSampelSLSSAKERNAS0825_2.set('fieldAliases', {'gid': 'gid', 'luas': 'luas', 'idsls': 'idsls', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'kdsls': 'kdsls', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'nmsls': 'nmsls', 'kddesa': 'kddesa', 'kdprov': 'kdprov', 'nmdesa': 'nmdesa', 'nmprov': 'nmprov', 'subsls': 'subsls', 'sumber': 'sumber', 'periode': 'periode', 'idsubsls': 'idsubsls', 'fid': 'fid', });
 lyr_DaftarSampelSLSUBINAN1225_3.set('fieldAliases', {'fid': 'fid', 'idsls': 'idsls', 'idsubsls': 'idsubsls', 'kdprov': 'kdprov', 'nmprov': 'nmprov', 'kdkab': 'kdkab', 'nmkab': 'nmkab', 'kdkec': 'kdkec', 'nmkec': 'nmkec', 'kddesa': 'kddesa', 'nmdesa': 'nmdesa', 'kdsls': 'kdsls', 'kdsubsls': 'kdsubsls', 'nmsls': 'nmsls', 'is_konsenrtasi': 'is_konsenrtasi', 'gid': 'gid', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'BTT': 'BTT', 'BKU': 'BKU', 'TOTAL_MUATAN': 'TOTAL_MUATAN', });
-lyr_DaftarSampelSLSSNLIK_4.set('fieldAliases', {'fid': 'fid', 'idsls': 'idsls', 'idsubsls': 'idsubsls', 'kdprov': 'kdprov', 'nmprov': 'nmprov', 'kdkab': 'kdkab', 'nmkab': 'nmkab', 'kdkec': 'kdkec', 'nmkec': 'nmkec', 'kddesa': 'kddesa', 'nmdesa': 'nmdesa', 'kdsls': 'kdsls', 'kdsubsls': 'kdsubsls', 'nmsls': 'nmsls', 'is_konsenrtasi': 'is_konsenrtasi', 'gid': 'gid', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'BTT': 'BTT', 'BKU': 'BKU', 'TOTAL_MUATAN': 'TOTAL_MUATAN', });
-lyr_BatasSLS_5.set('fieldAliases', {'fid': 'fid', 'idsls': 'idsls', 'idsubsls': 'idsubsls', 'kdprov': 'kdprov', 'nmprov': 'nmprov', 'kdkab': 'kdkab', 'nmkab': 'nmkab', 'kdkec': 'kdkec', 'nmkec': 'nmkec', 'kddesa': 'kddesa', 'nmdesa': 'nmdesa', 'kdsls': 'kdsls', 'kdsubsls': 'kdsubsls', 'nmsls': 'nmsls', 'is_konsenrtasi': 'is_konsenrtasi', 'gid': 'gid', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'BTT': 'BTT', 'BKU': 'BKU', 'TOTAL_MUATAN': 'TOTAL_MUATAN', });
-lyr_BatasDesa_6.set('fieldAliases', {'fid': 'fid', 'gid': 'gid', 'kdprov': 'kdprov', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'kddesa': 'kddesa', 'iddesa': 'iddesa', 'nmprov': 'nmprov', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'nmdesa': 'nmdesa', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'layer': 'layer', 'path': 'path', 'idkec': 'idkec', });
-lyr_BatasKecamatan_7.set('fieldAliases', {'fid': 'fid', 'gid': 'gid', 'kdprov': 'kdprov', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'nmprov': 'nmprov', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'layer': 'layer', 'path': 'path', 'idkec': 'idkec', });
+lyr_DaftarSampelSLSSNLIK_4.set('fieldAliases', {'gid': 'gid', 'luas': 'luas', 'idsls': 'idsls', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'kdsls': 'kdsls', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'nmsls': 'nmsls', 'kddesa': 'kddesa', 'kdprov': 'kdprov', 'nmdesa': 'nmdesa', 'nmprov': 'nmprov', 'subsls': 'subsls', 'sumber': 'sumber', 'periode': 'periode', 'idsubsls': 'idsubsls', 'fid': 'fid', });
+lyr_BatasSLS202501_5.set('fieldAliases', {'gid': 'gid', 'luas': 'luas', 'idsls': 'idsls', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'kdsls': 'kdsls', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'nmsls': 'nmsls', 'kddesa': 'kddesa', 'kdprov': 'kdprov', 'nmdesa': 'nmdesa', 'nmprov': 'nmprov', 'subsls': 'subsls', 'sumber': 'sumber', 'periode': 'periode', 'idsubsls': 'idsubsls', 'fid': 'fid', });
+lyr_BatasSLS202601_6.set('fieldAliases', {'fid': 'fid', 'idsls': 'idsls', 'idsubsls': 'idsubsls', 'kdprov': 'kdprov', 'nmprov': 'nmprov', 'kdkab': 'kdkab', 'nmkab': 'nmkab', 'kdkec': 'kdkec', 'nmkec': 'nmkec', 'kddesa': 'kddesa', 'nmdesa': 'nmdesa', 'kdsls': 'kdsls', 'kdsubsls': 'kdsubsls', 'nmsls': 'nmsls', 'is_konsenrtasi': 'is_konsenrtasi', 'gid': 'gid', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'BTT': 'BTT', 'BKU': 'BKU', 'TOTAL_MUATAN': 'TOTAL_MUATAN', });
+lyr_BatasDesa_7.set('fieldAliases', {'fid': 'fid', 'gid': 'gid', 'kdprov': 'kdprov', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'kddesa': 'kddesa', 'iddesa': 'iddesa', 'nmprov': 'nmprov', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'nmdesa': 'nmdesa', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'layer': 'layer', 'path': 'path', 'idkec': 'idkec', });
+lyr_BatasKecamatan_8.set('fieldAliases', {'fid': 'fid', 'gid': 'gid', 'kdprov': 'kdprov', 'kdkab': 'kdkab', 'kdkec': 'kdkec', 'nmprov': 'nmprov', 'nmkab': 'nmkab', 'nmkec': 'nmkec', 'luas': 'luas', 'sumber': 'sumber', 'periode': 'periode', 'layer': 'layer', 'path': 'path', 'idkec': 'idkec', });
 lyr_DaftarSampelSLSSUPAS25_1.set('fieldImages', {'gid': 'Range', 'luas': 'TextEdit', 'idsls': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'kdsls': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'nmsls': 'TextEdit', 'kddesa': 'TextEdit', 'kdprov': 'TextEdit', 'nmdesa': 'TextEdit', 'nmprov': 'TextEdit', 'subsls': '', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'idsubsls': 'TextEdit', 'fid': 'Range', });
 lyr_DaftarSampelSLSSAKERNAS0825_2.set('fieldImages', {'gid': 'Range', 'luas': 'TextEdit', 'idsls': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'kdsls': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'nmsls': 'TextEdit', 'kddesa': 'TextEdit', 'kdprov': 'TextEdit', 'nmdesa': 'TextEdit', 'nmprov': 'TextEdit', 'subsls': '', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'idsubsls': 'TextEdit', 'fid': 'Range', });
 lyr_DaftarSampelSLSUBINAN1225_3.set('fieldImages', {'fid': 'Range', 'idsls': 'TextEdit', 'idsubsls': 'TextEdit', 'kdprov': 'TextEdit', 'nmprov': 'TextEdit', 'kdkab': 'TextEdit', 'nmkab': 'TextEdit', 'kdkec': 'TextEdit', 'nmkec': 'TextEdit', 'kddesa': 'TextEdit', 'nmdesa': 'TextEdit', 'kdsls': 'TextEdit', 'kdsubsls': 'TextEdit', 'nmsls': 'TextEdit', 'is_konsenrtasi': 'Range', 'gid': 'Range', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'BTT': 'Range', 'BKU': 'Range', 'TOTAL_MUATAN': 'Range', });
-lyr_DaftarSampelSLSSNLIK_4.set('fieldImages', {'fid': 'Range', 'idsls': 'TextEdit', 'idsubsls': 'TextEdit', 'kdprov': 'TextEdit', 'nmprov': 'TextEdit', 'kdkab': 'TextEdit', 'nmkab': 'TextEdit', 'kdkec': 'TextEdit', 'nmkec': 'TextEdit', 'kddesa': 'TextEdit', 'nmdesa': 'TextEdit', 'kdsls': 'TextEdit', 'kdsubsls': 'TextEdit', 'nmsls': 'TextEdit', 'is_konsenrtasi': 'Range', 'gid': 'Range', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'BTT': 'Range', 'BKU': 'Range', 'TOTAL_MUATAN': 'Range', });
-lyr_BatasSLS_5.set('fieldImages', {'fid': 'Range', 'idsls': 'TextEdit', 'idsubsls': 'TextEdit', 'kdprov': 'TextEdit', 'nmprov': 'TextEdit', 'kdkab': 'TextEdit', 'nmkab': 'TextEdit', 'kdkec': 'TextEdit', 'nmkec': 'TextEdit', 'kddesa': 'TextEdit', 'nmdesa': 'TextEdit', 'kdsls': 'TextEdit', 'kdsubsls': 'TextEdit', 'nmsls': 'TextEdit', 'is_konsenrtasi': 'Range', 'gid': 'Range', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'BTT': 'Range', 'BKU': 'Range', 'TOTAL_MUATAN': 'Range', });
-lyr_BatasDesa_6.set('fieldImages', {'fid': 'TextEdit', 'gid': 'TextEdit', 'kdprov': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'kddesa': 'TextEdit', 'iddesa': 'TextEdit', 'nmprov': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'nmdesa': 'TextEdit', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', 'idkec': 'TextEdit', });
-lyr_BatasKecamatan_7.set('fieldImages', {'fid': 'TextEdit', 'gid': 'TextEdit', 'kdprov': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'nmprov': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', 'idkec': 'TextEdit', });
-lyr_DaftarSampelSLSSUPAS25_1.set('fieldLabels', {'gid': 'hidden field', 'luas': 'hidden field', 'idsls': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kdsls': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'hidden field', 'nmsls': 'inline label - visible with data', 'kddesa': 'hidden field', 'kdprov': 'hidden field', 'nmdesa': 'hidden field', 'nmprov': 'hidden field', 'subsls': 'no label', 'sumber': 'hidden field', 'periode': 'hidden field', 'idsubsls': 'inline label - visible with data', 'fid': 'hidden field', });
-lyr_DaftarSampelSLSSAKERNAS0825_2.set('fieldLabels', {'gid': 'hidden field', 'luas': 'hidden field', 'idsls': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kdsls': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'hidden field', 'nmsls': 'inline label - visible with data', 'kddesa': 'hidden field', 'kdprov': 'hidden field', 'nmdesa': 'hidden field', 'nmprov': 'hidden field', 'subsls': 'no label', 'sumber': 'hidden field', 'periode': 'hidden field', 'idsubsls': 'inline label - visible with data', 'fid': 'hidden field', });
-lyr_DaftarSampelSLSUBINAN1225_3.set('fieldLabels', {'fid': 'hidden field', 'idsls': 'hidden field', 'idsubsls': 'inline label - visible with data', 'kdprov': 'hidden field', 'nmprov': 'hidden field', 'kdkab': 'hidden field', 'nmkab': 'hidden field', 'kdkec': 'hidden field', 'nmkec': 'hidden field', 'kddesa': 'hidden field', 'nmdesa': 'hidden field', 'kdsls': 'hidden field', 'kdsubsls': 'hidden field', 'nmsls': 'inline label - visible with data', 'is_konsenrtasi': 'hidden field', 'gid': 'hidden field', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'BTT': 'hidden field', 'BKU': 'hidden field', 'TOTAL_MUATAN': 'hidden field', });
-lyr_DaftarSampelSLSSNLIK_4.set('fieldLabels', {'fid': 'hidden field', 'idsls': 'hidden field', 'idsubsls': 'inline label - visible with data', 'kdprov': 'hidden field', 'nmprov': 'hidden field', 'kdkab': 'hidden field', 'nmkab': 'hidden field', 'kdkec': 'hidden field', 'nmkec': 'hidden field', 'kddesa': 'hidden field', 'nmdesa': 'hidden field', 'kdsls': 'hidden field', 'kdsubsls': 'hidden field', 'nmsls': 'inline label - visible with data', 'is_konsenrtasi': 'hidden field', 'gid': 'hidden field', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'BTT': 'hidden field', 'BKU': 'hidden field', 'TOTAL_MUATAN': 'hidden field', });
-lyr_BatasSLS_5.set('fieldLabels', {'fid': 'hidden field', 'idsls': 'hidden field', 'idsubsls': 'header label - always visible', 'kdprov': 'hidden field', 'nmprov': 'hidden field', 'kdkab': 'hidden field', 'nmkab': 'hidden field', 'kdkec': 'hidden field', 'nmkec': 'inline label - visible with data', 'kddesa': 'hidden field', 'nmdesa': 'inline label - visible with data', 'kdsls': 'hidden field', 'kdsubsls': 'hidden field', 'nmsls': 'inline label - visible with data', 'is_konsenrtasi': 'hidden field', 'gid': 'hidden field', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'BTT': 'hidden field', 'BKU': 'hidden field', 'TOTAL_MUATAN': 'hidden field', });
-lyr_BatasDesa_6.set('fieldLabels', {'fid': 'hidden field', 'gid': 'hidden field', 'kdprov': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kddesa': 'hidden field', 'iddesa': 'hidden field', 'nmprov': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'header label - always visible', 'nmdesa': 'header label - always visible', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', 'idkec': 'hidden field', });
-lyr_BatasKecamatan_7.set('fieldLabels', {'fid': 'hidden field', 'gid': 'hidden field', 'kdprov': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'nmprov': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'header label - always visible', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', 'idkec': 'hidden field', });
-lyr_BatasKecamatan_7.on('precompose', function(evt) {
+lyr_DaftarSampelSLSSNLIK_4.set('fieldImages', {'gid': 'Range', 'luas': 'TextEdit', 'idsls': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'kdsls': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'nmsls': 'TextEdit', 'kddesa': 'TextEdit', 'kdprov': 'TextEdit', 'nmdesa': 'TextEdit', 'nmprov': 'TextEdit', 'subsls': '', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'idsubsls': 'TextEdit', 'fid': 'Range', });
+lyr_BatasSLS202501_5.set('fieldImages', {'gid': 'Range', 'luas': 'TextEdit', 'idsls': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'kdsls': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'nmsls': 'TextEdit', 'kddesa': 'TextEdit', 'kdprov': 'TextEdit', 'nmdesa': 'TextEdit', 'nmprov': 'TextEdit', 'subsls': '', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'idsubsls': 'TextEdit', 'fid': 'Range', });
+lyr_BatasSLS202601_6.set('fieldImages', {'fid': 'Range', 'idsls': 'TextEdit', 'idsubsls': 'TextEdit', 'kdprov': 'TextEdit', 'nmprov': 'TextEdit', 'kdkab': 'TextEdit', 'nmkab': 'TextEdit', 'kdkec': 'TextEdit', 'nmkec': 'TextEdit', 'kddesa': 'TextEdit', 'nmdesa': 'TextEdit', 'kdsls': 'TextEdit', 'kdsubsls': 'TextEdit', 'nmsls': 'TextEdit', 'is_konsenrtasi': 'Range', 'gid': 'Range', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'BTT': 'Range', 'BKU': 'Range', 'TOTAL_MUATAN': 'Range', });
+lyr_BatasDesa_7.set('fieldImages', {'fid': 'TextEdit', 'gid': 'TextEdit', 'kdprov': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'kddesa': 'TextEdit', 'iddesa': 'TextEdit', 'nmprov': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'nmdesa': 'TextEdit', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', 'idkec': 'TextEdit', });
+lyr_BatasKecamatan_8.set('fieldImages', {'fid': 'TextEdit', 'gid': 'TextEdit', 'kdprov': 'TextEdit', 'kdkab': 'TextEdit', 'kdkec': 'TextEdit', 'nmprov': 'TextEdit', 'nmkab': 'TextEdit', 'nmkec': 'TextEdit', 'luas': 'TextEdit', 'sumber': 'TextEdit', 'periode': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', 'idkec': 'TextEdit', });
+lyr_DaftarSampelSLSSUPAS25_1.set('fieldLabels', {'gid': 'hidden field', 'luas': 'hidden field', 'idsls': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kdsls': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'hidden field', 'nmsls': 'inline label - visible with data', 'kddesa': 'hidden field', 'kdprov': 'hidden field', 'nmdesa': 'header label - visible with data', 'nmprov': 'hidden field', 'subsls': 'no label', 'sumber': 'hidden field', 'periode': 'hidden field', 'idsubsls': 'inline label - visible with data', 'fid': 'hidden field', });
+lyr_DaftarSampelSLSSAKERNAS0825_2.set('fieldLabels', {'gid': 'hidden field', 'luas': 'hidden field', 'idsls': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kdsls': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'hidden field', 'nmsls': 'inline label - visible with data', 'kddesa': 'hidden field', 'kdprov': 'hidden field', 'nmdesa': 'header label - visible with data', 'nmprov': 'hidden field', 'subsls': 'no label', 'sumber': 'hidden field', 'periode': 'hidden field', 'idsubsls': 'inline label - visible with data', 'fid': 'hidden field', });
+lyr_DaftarSampelSLSUBINAN1225_3.set('fieldLabels', {'fid': 'hidden field', 'idsls': 'hidden field', 'idsubsls': 'inline label - visible with data', 'kdprov': 'hidden field', 'nmprov': 'hidden field', 'kdkab': 'hidden field', 'nmkab': 'hidden field', 'kdkec': 'hidden field', 'nmkec': 'hidden field', 'kddesa': 'hidden field', 'nmdesa': 'header label - visible with data', 'kdsls': 'hidden field', 'kdsubsls': 'hidden field', 'nmsls': 'inline label - visible with data', 'is_konsenrtasi': 'hidden field', 'gid': 'hidden field', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'BTT': 'hidden field', 'BKU': 'hidden field', 'TOTAL_MUATAN': 'hidden field', });
+lyr_DaftarSampelSLSSNLIK_4.set('fieldLabels', {'gid': 'hidden field', 'luas': 'hidden field', 'idsls': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kdsls': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'hidden field', 'nmsls': 'inline label - visible with data', 'kddesa': 'hidden field', 'kdprov': 'hidden field', 'nmdesa': 'header label - visible with data', 'nmprov': 'hidden field', 'subsls': 'no label', 'sumber': 'hidden field', 'periode': 'hidden field', 'idsubsls': 'inline label - visible with data', 'fid': 'hidden field', });
+lyr_BatasSLS202501_5.set('fieldLabels', {'gid': 'hidden field', 'luas': 'hidden field', 'idsls': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kdsls': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'inline label - visible with data', 'nmsls': 'inline label - visible with data', 'kddesa': 'hidden field', 'kdprov': 'hidden field', 'nmdesa': 'inline label - visible with data', 'nmprov': 'hidden field', 'subsls': 'no label', 'sumber': 'hidden field', 'periode': 'hidden field', 'idsubsls': 'header label - always visible', 'fid': 'hidden field', });
+lyr_BatasSLS202601_6.set('fieldLabels', {'fid': 'hidden field', 'idsls': 'hidden field', 'idsubsls': 'header label - always visible', 'kdprov': 'hidden field', 'nmprov': 'hidden field', 'kdkab': 'hidden field', 'nmkab': 'hidden field', 'kdkec': 'hidden field', 'nmkec': 'inline label - visible with data', 'kddesa': 'hidden field', 'nmdesa': 'inline label - visible with data', 'kdsls': 'hidden field', 'kdsubsls': 'hidden field', 'nmsls': 'inline label - visible with data', 'is_konsenrtasi': 'hidden field', 'gid': 'hidden field', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'BTT': 'hidden field', 'BKU': 'hidden field', 'TOTAL_MUATAN': 'hidden field', });
+lyr_BatasDesa_7.set('fieldLabels', {'fid': 'hidden field', 'gid': 'hidden field', 'kdprov': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'kddesa': 'hidden field', 'iddesa': 'hidden field', 'nmprov': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'header label - always visible', 'nmdesa': 'header label - always visible', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', 'idkec': 'hidden field', });
+lyr_BatasKecamatan_8.set('fieldLabels', {'fid': 'hidden field', 'gid': 'hidden field', 'kdprov': 'hidden field', 'kdkab': 'hidden field', 'kdkec': 'hidden field', 'nmprov': 'hidden field', 'nmkab': 'hidden field', 'nmkec': 'header label - always visible', 'luas': 'hidden field', 'sumber': 'hidden field', 'periode': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', 'idkec': 'hidden field', });
+lyr_BatasKecamatan_8.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
