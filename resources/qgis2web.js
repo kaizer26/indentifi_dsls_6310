@@ -1094,7 +1094,7 @@ let measuring = false;
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_BatasSLS202601_6,
+    layer: lyr_BatasSLS202601_7,
     colName: 'idsubsls',
     zoom: 10,
     collapsed: true,
